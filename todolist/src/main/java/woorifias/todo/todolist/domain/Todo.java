@@ -1,9 +1,8 @@
 package woorifias.todo.todolist.domain;
 
+import jakarta.persistence.*;
 import lombok.*;
 import woorifias.todo.todolist.dto.TodoRequest;
-
-import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
@@ -13,7 +12,8 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Todo extends BaseTime{
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
     private String summary;

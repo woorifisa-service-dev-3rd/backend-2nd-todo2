@@ -1,5 +1,6 @@
 package woorifias.todo.todolist.controller;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import woorifias.todo.todolist.core.dto.ResponseDTO;
@@ -8,8 +9,6 @@ import woorifias.todo.todolist.dto.TodoRequest;
 import woorifias.todo.todolist.dto.TodoResponse;
 import woorifias.todo.todolist.service.TodoService;
 
-import javax.validation.Valid;
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController

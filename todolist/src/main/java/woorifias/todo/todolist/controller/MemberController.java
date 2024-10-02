@@ -1,5 +1,6 @@
 package woorifias.todo.todolist.controller;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import woorifias.todo.todolist.core.dto.ResponseDTO;
@@ -7,7 +8,6 @@ import woorifias.todo.todolist.dto.MemberRequest;
 import woorifias.todo.todolist.dto.MemberResponse;
 import woorifias.todo.todolist.service.MemberService;
 
-import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/api/v1/members")

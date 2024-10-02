@@ -1,15 +1,14 @@
 package woorifias.todo.todolist.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import woorifias.todo.todolist.domain.Category;
 
 import java.time.LocalDate;
 
 import lombok.Setter;
-
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
 
 @Getter
 @Setter
